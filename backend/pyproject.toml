@@ -7,7 +7,11 @@ authors = [
     { name = "rickardgarnau-byte", email = "rickardgarnau@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pandas",
+]
 
 [project.scripts]
 backend = "backend:main"
