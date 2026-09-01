@@ -1,6 +1,6 @@
 # eClipseBord
 
-FastAPI + Streamlit dashboard for exploring NASA's Five Millennium Catalogs of lunar and solar eclipses. Built for the FastlyDep lab (Data Engineering, Kokchun Giang) — dockerized locally, deployed to Azure with Terraform.
+FastAPI + Streamlit dashboard for exploring NASA's Five Millennium Catalogs of lunar and solar eclipses. Built for the FastlyDep lab assignment — dockerized locally, deployed to Azure with Terraform.
 
 ## Stack
 
