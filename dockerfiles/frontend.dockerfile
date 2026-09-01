@@ -10,4 +10,4 @@ RUN uv sync --no-dev
 
 WORKDIR /app/src/frontend
 
-CMD [ "uv" , "run", "streamlit", "run", "dashboard.py", "--server.address", "0.0.0.0"]
+CMD [ "uv" , "run", "streamlit", "run", "app.py", "--server.address", "0.0.0.0"]

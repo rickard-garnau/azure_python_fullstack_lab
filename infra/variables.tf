@@ -1,6 +1,6 @@
 variable "resource_group_name" {
-    default = "FastlyDep"
-    type = string
+  default = "FastlyDep"
+  type    = string
 }
 
 variable "location" {
@@ -9,7 +9,7 @@ variable "location" {
 }
 
 variable "project_name" {
-  default = "FastlyDep"
+  default = "fastlydep"
 }
 
 variable "acr_name" {
@@ -23,8 +23,8 @@ variable "image_tag" {
 variable "tags" {
   type = map(string)
   default = {
-  environment = "dev"
-  project     = "eclipsebord"
-  owner       = "rickard garnau"
+    environment = "dev"
+    project     = "eclipsebord"
+    owner       = "rickard garnau"
   }
 }
