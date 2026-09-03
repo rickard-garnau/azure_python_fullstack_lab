@@ -2,9 +2,8 @@ import pandas as pd
 import streamlit as st
 from views.gamma import render_gamma_metric
 
-""" LLM solution:
-type_key is passed in rather than hardcoded because lunar and solar have different eclipse type codes, so the explanation text can't be shared
-"""
+# LLM solution: type_key is passed in rather than hardcoded because lunar and solar have different eclipse type codes, so the explanation text can't be shared
+
 
 SOLAR_TYPE_KEY = [ 
     "P — Partial eclipse (Moon covers part of the Sun)",
@@ -27,6 +26,6 @@ def plot_gamma_magnitude(df: pd.DataFrame) -> None:
         data=df,
         x="Gamma",
         y="Eclipse Magnitude",
-        color="#E3FF21",
+        color="#F5DB93",
     )  
 

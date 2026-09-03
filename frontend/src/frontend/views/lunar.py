@@ -2,9 +2,8 @@ import streamlit as st
 import pandas as pd
 from views.gamma import render_gamma_metric
 
-""" LLM solution:
-type_key is passed in rather than hardcoded because lunar and solar have different eclipse type codes, so the explanation text can't be shared
-"""
+# LLM solution: type_key is passed in rather than hardcoded because lunar and solar have different eclipse type codes, so the explanation text can't be shared
+
 
 LUNAR_TYPE_KEY = [ 
     "N — Penumbral eclipse (Moon passes only through Earth's penumbra, not the umbra)",

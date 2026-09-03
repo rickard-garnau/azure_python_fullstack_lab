@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-# Function that both lunar and solar can use (DRY)
+# A function that both lunar and solar can use
 def eclipse_types(df: pd.DataFrame, type_key) -> None:
     st.write("Different types of eclipses")
     st.bar_chart(
