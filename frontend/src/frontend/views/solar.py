@@ -22,7 +22,7 @@ def solar_metrics(df: pd.DataFrame):
         st.metric(label="Max Magnitude", value=max_magnitude)
 
 def plot_gamma_magnitude(df: pd.DataFrame) -> None:
-    st.write("Conjunction between Gamma and Magnitude to define how an eclipse will look. A low Gamma means the Moon passes centrally in front of the Sun, giving a high magnitude closer to total coverage. A high Gamma means a more off-center pass, giving a low magnitude only a partial eclipse." )
+    st.write("Conjunction between Gamma and Magnitude to define how an eclipse will look. A low Gamma means the Moon passes centrally in front of the Sun, giving a high magnitude closer to total coverage. A high Gamma means a more off-center pass, giving a low magnitude only a partial eclipse.")
     st.scatter_chart(
         data=df,
         x="Gamma",
