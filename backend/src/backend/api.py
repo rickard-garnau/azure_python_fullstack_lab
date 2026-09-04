@@ -1,7 +1,5 @@
 import json
-
 from fastapi import FastAPI
-
 from backend.data_processing import df_lunar, df_solar
 
 app = FastAPI()

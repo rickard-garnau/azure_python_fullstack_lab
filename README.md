@@ -178,25 +178,15 @@ This builds and starts both services on the same network, with the frontend auto
 
 ---
 
-## Deploying to Azure
+## Deploy to Azure
 
 ```bash
-cd infra
-terraform init
-terraform apply
+./deploy_infra.sh
 ```
 
-This creates the resource group, Container Registry, Container App (backend), and Web App (frontend) — and sets `BACKEND_URL` on the Web App automatically, no manual configuration needed.
+This handles the ACR chicken-and-egg problem automatically: it creates the Container Registry first, builds and pushes the images, then applies the rest of the infrastructure. See the script for the individual steps.
 
-Build and push the images to the registry Terraform just created:
-
-```bash
-docker login <acr-name>.azurecr.io
-docker compose build
-docker compose push
-```
-
-Run `terraform destroy` when you're done testing — the Web App's App Service plan has a fixed hourly cost regardless of usage.
+`terraform destroy` when done — the App Service plan has a fixed hourly cost.
 
 ---
 
